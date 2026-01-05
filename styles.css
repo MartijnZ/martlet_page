@@ -70,7 +70,7 @@ header {
 header::before {
   content: "";
   position: absolute;
-  inset: -110px -120px auto auto;
+  inset: -110px 0 auto auto;
   width: 340px;
   height: 340px;
   border-radius: 50%;
@@ -99,7 +99,7 @@ header::before {
 }
 
 .brand img {
-  width: 400px;
+  width: min(360px, 70vw);
   height: auto;
 }
 

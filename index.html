@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Over Martlet | Denken en doen voor de MKB maakindustrie</title>
-  <meta name="description" content="Martlet helpt MKB-maakbedrijven met scherpe technische denkkracht, focus en uitvoering. Kritisch waar nodig. Hands-on tot het werkt.">
-  <meta property="og:title" content="Over Martlet | Denken en doen voor de MKB maakindustrie">
-  <meta property="og:description" content="Martlet helpt MKB-maakbedrijven met scherpe technische denkkracht, focus en uitvoering. Kritisch waar nodig. Hands-on tot het werkt.">
+  <meta id="meta-description" name="description" content="Martlet helpt MKB-maakbedrijven met scherpe technische denkkracht, focus en uitvoering. Kritisch waar nodig. Hands-on tot het werkt.">
+  <meta id="meta-og-title" property="og:title" content="Over Martlet | Denken en doen voor de MKB maakindustrie">
+  <meta id="meta-og-description" property="og:description" content="Martlet helpt MKB-maakbedrijven met scherpe technische denkkracht, focus en uitvoering. Kritisch waar nodig. Hands-on tot het werkt.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:url" content="/">
@@ -32,9 +32,13 @@
         <img src="./martlet_logo.png" alt="Martlet logo">
       </a>
       <nav class="nav-links">
-        <a href="#diensten">Bekijk diensten</a>
-        <a href="#contact">Plan een kennismaking</a>
+        <a href="#diensten" data-i18n="nav.services">Bekijk diensten</a>
+        <a href="#contact" data-i18n="nav.contact">Plan een kennismaking</a>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button id="lang-nl" type="button" aria-pressed="true">NL</button>
+        <button id="lang-en" type="button" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -43,18 +47,18 @@
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
         <h1>          
-          <span>Denken en doen voor de MKB maakindustrie.</span>
+          <span data-i18n="hero.title">Denken en doen voor de MKB maakindustrie.</span>
         </h1>
-        <p class="lede">
+        <p class="lede" data-i18n="hero.lede">
           Met Martlet brengt Martijn scherpe, kritische technische denkkracht en uitvoering. Niet om rapporten te schrijven,
-          maar om problemen echt op te lossen — samen met het team op de vloer.
+          maar om problemen echt op te lossen - samen met het team op de vloer.
         </p>
-        <p class="sublede">
-          Nederland moet blijven maken. En dat vraagt om bedrijven die blijven verbeteren — in product, proces en automatisering.
+        <p class="sublede" data-i18n="hero.sublede">
+          Nederland moet blijven maken. En dat vraagt om bedrijven die blijven verbeteren - in product, proces en automatisering.
         </p>
         <div class="cta-group">
-          <a class="btn btn-primary" href="mailto:info@martlet.nl">Plan een kennismaking</a>
-          <a class="btn btn-secondary" href="#diensten">Bekijk diensten</a>
+          <a class="btn btn-primary" href="mailto:info@martlet.nl" data-i18n="cta.primary">Plan een kennismaking</a>
+          <a class="btn btn-secondary" href="#diensten" data-i18n="cta.secondary">Bekijk diensten</a>
         </div>
       </div>
     </section>
@@ -62,17 +66,17 @@
     <section>
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
-        <h2>Waarom Martlet</h2>
-        <p>
+        <h2 data-i18n="why.h">Waarom Martlet</h2>
+        <p data-i18n="why.p1">
           Martlet bestaat omdat Nederland moet blijven maken. Onze maakindustrie draait op ruim 35.000 MKB-bedrijven die unieke producten leveren over de hele wereld.
           Ze hebben vakmanschap, maar vaak moeite met innoveren. Dagelijkse hectiek wint het van ontwikkeling.
         </p>
-        <p>
+        <p data-i18n="why.p2">
           Martijn brengt precies wat er dan ontbreekt: scherpe, kritische technische denkkracht die innovatie versnelt en toekomstbestendigheid veiligstelt.
         </p>
         <div class="callout">
-          <strong>Gebrek aan focus is vaak het echte probleem.</strong>
-          Niet alles kan tegelijk. Martijn helpt kiezen wat nu het meeste oplevert — en begeleidt de verandering.
+          <strong data-i18n="why.callout.title">Gebrek aan focus is vaak het echte probleem.</strong>
+          <span data-i18n="why.callout.body">Niet alles kan tegelijk. Martijn helpt kiezen wat nu het meeste oplevert - en begeleidt de verandering.</span>
         </div>
       </div>
     </section>
@@ -80,21 +84,21 @@
     <section>
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
-        <h2>Hoe Martlet werkt</h2>
-        <p>Wij starten niet met aannames, maar met scherpte.</p>
+        <h2 data-i18n="how.h">Hoe Martlet werkt</h2>
+        <p data-i18n="how.lede">Wij starten niet met aannames, maar met scherpte.</p>
         <div class="columns">
           <ul>
-            <li><strong>Is dit écht een probleem?</strong> Wat zien we, wat meten we, wat kost het?</li>
-            <li><strong>Waarom is dit een probleem?</strong> Oorzaak boven symptoom. Processen, techniek en context.</li>
-            <li><strong>Wat is de kleinste ingreep met het grootste effect?</strong> Focus boven omvang.</li>
+            <li data-i18n="how.li1"><strong>Is dit écht een probleem?</strong> Wat zien we, wat meten we, wat kost het?</li>
+            <li data-i18n="how.li2"><strong>Waarom is dit een probleem?</strong> Oorzaak boven symptoom. Processen, techniek en context.</li>
+            <li data-i18n="how.li3"><strong>Wat is de kleinste ingreep met het grootste effect?</strong> Focus boven omvang.</li>
           </ul>
           <ul>
-            <li><strong>Techniek alleen is zelden genoeg.</strong> Verandering faalt vaak op mens, eigenaarschap en ritme.</li>
-            <li><strong>Samenwerking is verplicht.</strong> Zonder buy-in geen blijvende verbetering. Martlet werkt met het bestaande team, niet ernaast.</li>
+            <li data-i18n="how.li4"><strong>Techniek alleen is zelden genoeg.</strong> Verandering faalt vaak op mens, eigenaarschap en ritme.</li>
+            <li data-i18n="how.li5"><strong>Samenwerking is verplicht.</strong> Zonder buy-in geen blijvende verbetering. Martlet werkt met het bestaande team, niet ernaast.</li>
           </ul>
         </div>
-        <p>
-          Martlet combineert analyse met realisatie. Als iets “werkt op papier” maar niet op de vloer, is het niet af.
+        <p data-i18n="how.p2">
+          Martlet combineert analyse met realisatie. Als iets "werkt op papier" maar niet op de vloer, is het niet af.
         </p>
       </div>
     </section>
@@ -102,59 +106,59 @@
     <section id="diensten">
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
-        <h2>Wat Martlet doet</h2>
-        <p>
+        <h2 data-i18n="what.h">Wat Martlet doet</h2>
+        <p data-i18n="what.p1">
           Martlet helpt MKB-maakbedrijven om product-, proces- en automatiseringsvraagstukken structureel op te lossen.
           Dat doen we door extra technische denkkracht, focus en uitvoering te brengen op plekken waar capaciteit of expertise ontbreekt.
         </p>
         <div class="cards">
           <article class="card">
-            <div class="tag">Product</div>
-            <h3>Product &amp; Value Analyse</h3>
-            <p>Systematische waarde-analyse en scherpe productkeuzes. Verbeter product/market fit en haal verspilling uit het ontwerp.</p>
+            <div class="tag" data-i18n="what.s1.tag">Product</div>
+            <h3 data-i18n="what.s1.h">Product &amp; Value Analyse</h3>
+            <p data-i18n="what.s1.p">Systematische waarde-analyse en scherpe productkeuzes. Verbeter product/market fit en haal verspilling uit het ontwerp.</p>
             <div>
-              <div class="meta"><strong>Voor wie:</strong> Bedrijven die beter willen presteren met het product dat hun business draagt.</div>
+              <div class="meta" data-i18n="what.s1.meta1"><strong>Voor wie:</strong> Bedrijven die beter willen presteren met het product dat hun business draagt.</div>
             </div>
             <div>
-              <div class="meta"><strong>Resultaten:</strong></div>
+              <div class="meta" data-i18n="what.s1.meta2"><strong>Resultaten:</strong></div>
               <ul>
-                <li>hogere marge</li>
-                <li>minder complexiteit</li>
-                <li>snellere doorontwikkeling</li>
+                <li data-i18n="what.s1.li1">hogere marge</li>
+                <li data-i18n="what.s1.li2">minder complexiteit</li>
+                <li data-i18n="what.s1.li3">snellere doorontwikkeling</li>
               </ul>
             </div>
           </article>
 
           <article class="card">
-            <div class="tag">Automatisering</div>
-            <h3>Automatisering &amp; digitalisering</h3>
-            <p>Probleemanalyse, planontwerp, review van bestaande plannen en implementatiebegeleiding tot het werkt.</p>
+            <div class="tag" data-i18n="what.s2.tag">Automatisering</div>
+            <h3 data-i18n="what.s2.h">Automatisering &amp; digitalisering</h3>
+            <p data-i18n="what.s2.p">Probleemanalyse, planontwerp, review van bestaande plannen en implementatiebegeleiding tot het werkt.</p>
             <div>
-              <div class="meta"><strong>Voor wie:</strong> Bedrijven die willen automatiseren, maar misfit en falende implementatie willen voorkomen.</div>
+              <div class="meta" data-i18n="what.s2.meta1"><strong>Voor wie:</strong> Bedrijven die willen automatiseren, maar misfit en falende implementatie willen voorkomen.</div>
             </div>
             <div>
-              <div class="meta"><strong>Resultaten:</strong></div>
+              <div class="meta" data-i18n="what.s2.meta2"><strong>Resultaten:</strong></div>
               <ul>
-                <li>stabielere output</li>
-                <li>minder storingen</li>
-                <li>betere data voor sturen</li>
+                <li data-i18n="what.s2.li1">stabielere output</li>
+                <li data-i18n="what.s2.li2">minder storingen</li>
+                <li data-i18n="what.s2.li3">betere data voor sturen</li>
               </ul>
             </div>
           </article>
 
           <article class="card">
-            <div class="tag">Leiderschap</div>
-            <h3>Interim technisch leiderschap &amp; projectrealisatie</h3>
-            <p>Tijdelijke versterking als projectleider, engineering lead of innovatiemanager. Vastgelopen projecten vlot trekken, en opleveren.</p>
+            <div class="tag" data-i18n="what.s3.tag">Leiderschap</div>
+            <h3 data-i18n="what.s3.h">Interim technisch leiderschap &amp; projectrealisatie</h3>
+            <p data-i18n="what.s3.p">Tijdelijke versterking als projectleider, engineering lead of innovatiemanager. Vastgelopen projecten vlot trekken, en opleveren.</p>
             <div>
-              <div class="meta"><strong>Voor wie:</strong> Bedrijven die tijdelijk extra denk- en daadkracht nodig hebben om vooruit te komen.</div>
+              <div class="meta" data-i18n="what.s3.meta1"><strong>Voor wie:</strong> Bedrijven die tijdelijk extra denk- en daadkracht nodig hebben om vooruit te komen.</div>
             </div>
             <div>
-              <div class="meta"><strong>Resultaten:</strong></div>
+              <div class="meta" data-i18n="what.s3.meta2"><strong>Resultaten:</strong></div>
               <ul>
-                <li>tempo terug in projecten</li>
-                <li>heldere prioriteiten</li>
-                <li>team in control</li>
+                <li data-i18n="what.s3.li1">tempo terug in projecten</li>
+                <li data-i18n="what.s3.li2">heldere prioriteiten</li>
+                <li data-i18n="what.s3.li3">team in control</li>
               </ul>
             </div>
           </article>
@@ -165,14 +169,14 @@
     <section>
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
-        <h2>Wanneer Martlet past</h2>
+        <h2 data-i18n="fit.h">Wanneer Martlet past</h2>
         <div class="list-block">
           <ul>
-            <li>Je weet dat er iets schuurt, maar niet wat het echte knelpunt is.</li>
-            <li>Er zijn te veel initiatieven en te weinig focus.</li>
-            <li>Een automatiserings- of verbeterproject loopt vast (of dreigt vast te lopen).</li>
-            <li>Je mist tijdelijk technische leiderschapscapaciteit.</li>
-            <li>Je wilt resultaat op de vloer, niet alleen plannen in PowerPoint.</li>
+            <li data-i18n="fit.li1">Je weet dat er iets schuurt, maar niet wat het echte knelpunt is.</li>
+            <li data-i18n="fit.li2">Er zijn te veel initiatieven en te weinig focus.</li>
+            <li data-i18n="fit.li3">Een automatiserings- of verbeterproject loopt vast (of dreigt vast te lopen).</li>
+            <li data-i18n="fit.li4">Je mist tijdelijk technische leiderschapscapaciteit.</li>
+            <li data-i18n="fit.li5">Je wilt resultaat op de vloer, niet alleen plannen in PowerPoint.</li>
           </ul>
         </div>
       </div>
@@ -181,13 +185,13 @@
     <section class="steps">
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
-        <h2>Werken in vier stappen</h2>
+        <h2 data-i18n="steps.h">Werken in vier stappen</h2>
         <div class="list-block">
           <ol>
-            <li><strong>Scherpstellen</strong> — probleem, scope, impact, succescriteria</li>
-            <li><strong>Ontleden</strong> — oorzaken, data, proces, mens, randvoorwaarden</li>
-            <li><strong>Oplossen</strong> — ontwerp, keuzes, planning, risico’s, buy-in</li>
-            <li><strong>Realiseren &amp; borgen</strong> — implementeren, trainen, verbeteren, eigenaarschap overdragen</li>
+            <li data-i18n="steps.li1"><strong>Scherpstellen</strong> - probleem, scope, impact, succescriteria</li>
+            <li data-i18n="steps.li2"><strong>Ontleden</strong> - oorzaken, data, proces, mens, randvoorwaarden</li>
+            <li data-i18n="steps.li3"><strong>Oplossen</strong> - ontwerp, keuzes, planning, risico's, buy-in</li>
+            <li data-i18n="steps.li4"><strong>Realiseren &amp; borgen</strong> - implementeren, trainen, verbeteren, eigenaarschap overdragen</li>
           </ol>
         </div>
       </div>
@@ -196,13 +200,13 @@
     <section>
       <div class="container">
         <div class="section-title" aria-hidden="true"></div>
-        <h2>Kernwaarden</h2>
+        <h2 data-i18n="values.h">Kernwaarden</h2>
         <ul class="values">
-		<li><strong>Eigenaarschap:</strong> we stoppen niet bij advies</li>
-        <li><strong>Eerlijk:</strong> haalbaarheid boven wensdenken</li>        
-          <li><strong>Hands-on:</strong> aanwezig waar het gebeurt</li>
-          <li><strong>Pragmatisch:</strong> grote effect haal je in kleine stappen</li>
-          <li><strong>Vakmanschap:</strong> begrip van techniek en productie</li>
+		<li data-i18n="values.li1"><strong>Eigenaarschap:</strong> we stoppen niet bij advies</li>
+        <li data-i18n="values.li2"><strong>Eerlijk:</strong> haalbaarheid boven wensdenken</li>        
+          <li data-i18n="values.li3"><strong>Hands-on:</strong> aanwezig waar het gebeurt</li>
+          <li data-i18n="values.li4"><strong>Pragmatisch:</strong> grote effect haal je in kleine stappen</li>
+          <li data-i18n="values.li5"><strong>Vakmanschap:</strong> begrip van techniek en productie</li>
         </ul>
       </div>
     </section>
@@ -211,15 +215,15 @@
       <div class="container">
         <div class="cta-block">
           <div>
-            <h2>Zin om scherpte en focus aan tafel te halen?</h2>
-            <p>Plan een kennismaking. Dan toetsen we samen: is dit echt een probleem, waarom, en wat is de kortste route naar resultaat.</p>
+            <h2 data-i18n="cta.h">Zin om scherpte en focus aan tafel te halen?</h2>
+            <p data-i18n="cta.p">Plan een kennismaking. Dan toetsen we samen: is dit echt een probleem, waarom, en wat is de kortste route naar resultaat.</p>
             <div class="cta-group">
-              <a class="btn btn-primary" href="mailto:martijn@martlet.nu">Plan een kennismaking</a>
+              <a class="btn btn-primary" href="mailto:martijn@martlet.nu" data-i18n="cta.primary">Plan een kennismaking</a>
             </div>
           </div>
           <div class="contact-lines">
-            <div><strong>Email:</strong> martijn (at) martlet.nu</div>
-            <div><strong>Locatie:</strong> Nederland (on-site bij MKB maakbedrijven)</div>
+            <div data-i18n="contact.email"><strong>Email:</strong> martijn (at) martlet.nu</div>
+            <div data-i18n="contact.location"><strong>Locatie:</strong> Nederland (on-site bij MKB maakbedrijven)</div>
           </div>
         </div>
       </div>
@@ -228,9 +232,68 @@
 
   <footer>
     <div class="container">
-      Martlet — Denken en doen voor de MKB maakindustrie.
+      <span data-i18n="footer">Martlet - Denken en doen voor de MKB maakindustrie.</span>
     </div>
   </footer>
+  <script>
+    const dictCache = {};
+
+    async function loadDict(lang) {
+      if (dictCache[lang]) return dictCache[lang];
+      const response = await fetch(`./i18n/${lang}.json`, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load language: ${lang}`);
+      }
+      const data = await response.json();
+      dictCache[lang] = data;
+      return data;
+    }
+
+    function applyTranslations(dict, lang) {
+      document.documentElement.lang = lang;
+
+      const nl = document.getElementById("lang-nl");
+      const en = document.getElementById("lang-en");
+      if (nl && en) {
+        nl.setAttribute("aria-pressed", String(lang === "nl"));
+        en.setAttribute("aria-pressed", String(lang === "en"));
+      }
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const val = dict[key];
+        if (val !== undefined) el.innerHTML = val;
+      });
+
+      if (dict["meta.title"]) document.title = dict["meta.title"];
+      const metaDesc = document.getElementById("meta-description");
+      if (metaDesc && dict["meta.description"]) metaDesc.setAttribute("content", dict["meta.description"]);
+      const metaOgTitle = document.getElementById("meta-og-title");
+      if (metaOgTitle && dict["meta.ogTitle"]) metaOgTitle.setAttribute("content", dict["meta.ogTitle"]);
+      const metaOgDesc = document.getElementById("meta-og-description");
+      if (metaOgDesc && dict["meta.ogDescription"]) metaOgDesc.setAttribute("content", dict["meta.ogDescription"]);
+    }
+
+    async function setLanguage(lang) {
+      try {
+        const dict = await loadDict(lang);
+        applyTranslations(dict, lang);
+        localStorage.setItem("martlet_lang", lang);
+      } catch (err) {
+        if (lang !== "nl") {
+          const dict = await loadDict("nl");
+          applyTranslations(dict, "nl");
+          localStorage.setItem("martlet_lang", "nl");
+        }
+      }
+    }
+
+    document.getElementById("lang-nl").addEventListener("click", () => setLanguage("nl"));
+    document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
+
+    const saved = localStorage.getItem("martlet_lang");
+    setLanguage(saved === "en" ? "en" : "nl");
+  </script>
 </body>
 </html>
 

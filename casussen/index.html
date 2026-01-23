@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casussen | Martlet</title>
+  <meta name="description" content="Resultaatgerichte casussen die laten zien wat ik kan en waar dit bewezen is.">
+  <meta property="og:title" content="Casussen | Martlet">
+  <meta property="og:description" content="Resultaatgerichte casussen die laten zien wat ik kan en waar dit bewezen is.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:url" content="/casussen/">
+  <link rel="icon" href="/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="page" id="top">
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Naar de homepage">
+        <img src="/martlet_logo.png" alt="Martlet logo">
+      </a>
+      <nav class="nav-links">
+        <a href="/over-martijn/">Over Martijn</a>
+        <a href="/#diensten">Diensten</a>
+        <a href="/casussen/">Casussen</a>
+        <a href="/#contact">Plan een kennismaking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-title" aria-hidden="true"></div>
+        <h1>Casussen</h1>
+        <p class="lede">Resultaatgerichte casussen die laten zien wat ik kan en waar dit bewezen is.</p>
+      </div>
+    </section>
+
+    <section class="case-list-section">
+      <div class="container">
+        <div class="cards case-list" id="case-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>Martlet - Denken en doen voor de MKB maakindustrie.</span>
+    </div>
+  </footer>
+  <script src="/cases-data.js"></script>
+  <script>
+    (function renderCases() {
+      const list = document.getElementById("case-list");
+      const cases = window.MARTLET_CASES || [];
+      if (!list || cases.length === 0) return;
+
+      cases.forEach(item => {
+        const article = document.createElement("article");
+        article.className = "card case-card";
+
+        const tags = document.createElement("div");
+        tags.className = "tag-group";
+        (item.tags || []).forEach(tagName => {
+          const tag = document.createElement("span");
+          tag.className = "tag";
+          tag.textContent = tagName;
+          tags.appendChild(tag);
+        });
+
+        const title = document.createElement("h3");
+        title.textContent = item.title;
+
+        const results = document.createElement("ul");
+        results.className = "case-list";
+        (item.resultsShort || item.results).forEach(point => {
+          const li = document.createElement("li");
+          li.textContent = point;
+          results.appendChild(li);
+        });
+
+        const application = document.createElement("p");
+        application.className = "case-application";
+        application.textContent = `Toepassing: ${item.application}`;
+
+        const link = document.createElement("a");
+        link.className = "case-link";
+        link.href = `/casussen/${item.slug}/`;
+        link.textContent = "Bekijk casus";
+
+        if (tags.childElementCount) article.appendChild(tags);
+        article.appendChild(title);
+        article.appendChild(results);
+        article.appendChild(application);
+        article.appendChild(link);
+
+        list.appendChild(article);
+      });
+    })();
+  </script>
+</body>
+</html>

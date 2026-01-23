@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Over Martijn | Martlet</title>
+  <meta id="meta-description" name="description" content="Martijn verhoogt besliszekerheid wanneer keuzes duur zijn — door scherpte te brengen én mee te bewegen tot het werkt.">
+  <meta id="meta-og-title" property="og:title" content="Over Martijn | Martlet">
+  <meta id="meta-og-description" property="og:description" content="Martijn verhoogt besliszekerheid wanneer keuzes duur zijn — door scherpte te brengen én mee te bewegen tot het werkt.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:url" content="/over-martijn/">
+  <link rel="icon" href="/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="page" id="top">
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Terug naar boven">
+        <img src="/martlet_logo.png" alt="Martlet logo">
+      </a>
+      <nav class="nav-links">
+        <a href="/over-martijn/" data-i18n="nav.about">Over Martijn</a>
+        <a href="/#diensten" data-i18n="nav.services">Bekijk diensten</a>
+        <a href="/casussen/" data-i18n="nav.cases">Casussen</a>
+        <a href="/#contact" data-i18n="nav.contact">Plan een kennismaking</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button id="lang-nl" type="button" aria-pressed="true">NL</button>
+        <button id="lang-en" type="button" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="section-title" aria-hidden="true"></div>
+        <h1 data-i18n="about.title">Over Martijn</h1>
+        <p class="lede" data-i18n="about.intro">
+          Martijn is een intellectuele pragmaticus. Hij verhoogt besliszekerheid wanneer keuzes duur zijn — door scherpte te brengen én mee te bewegen tot het werkt.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title" aria-hidden="true"></div>
+        <h2 data-i18n="about.h">Over Martijn</h2>
+        <p data-i18n="about.p1">
+          Martijn is een intellectuele pragmaticus. Hij helpt organisaties eerst scherp te krijgen wat het échte probleem is, voordat er oplossingen worden gekozen. Vanuit overzicht brengt hij structuur aan, toetst ideeën aan hun doel en aan de realiteit, en helpt richting bepalen die ook uitvoerbaar blijft.
+        </p>
+        <p data-i18n="about.p2">
+          Hij beweegt zich net zo makkelijk tussen probleemdefinitie en oplossing als in strategische gesprekken en op de werkvloer. Juist dat continue schakelen zorgt voor rust, focus en draagvlak. Mensen raken gemotiveerd omdat ze begrijpen waarom er keuzes worden gemaakt — en omdat ze er zelf aan kunnen bijdragen.
+        </p>
+        <p data-i18n="about.p3">
+          Martijn werkte acht jaar in een MKB-maakbedrijf waar hij binnenkwam als ‘die Ph.D. die vast zo weer weg is’. Hij bleef, leerde het bedrijf van binnenuit kennen en groeide uit tot een betrouwbaar kennispunt dat richting gaf als het ingewikkeld werd.
+        </p>
+        <p data-i18n="about.p4">
+          Gedreven en inhoudelijk betrokken. Gelooft hij in de richting, dan gaat hij ervoor — precies waar Martlet voor staat: blijven bewegen tot er vooruitgang is.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span data-i18n="footer">Martlet - Denken en doen voor de MKB maakindustrie.</span>
+    </div>
+  </footer>
+
+  <script>
+    const dictCache = {};
+
+    async function loadDict(lang) {
+      if (dictCache[lang]) return dictCache[lang];
+      const response = await fetch(`/i18n/${lang}.json`, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Failed to load language: ${lang}`);
+      }
+      const data = await response.json();
+      dictCache[lang] = data;
+      return data;
+    }
+
+    function applyTranslations(dict, lang) {
+      document.documentElement.lang = lang;
+
+      const nl = document.getElementById("lang-nl");
+      const en = document.getElementById("lang-en");
+      if (nl && en) {
+        nl.setAttribute("aria-pressed", String(lang === "nl"));
+        en.setAttribute("aria-pressed", String(lang === "en"));
+      }
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const val = dict[key];
+        if (val !== undefined) el.innerHTML = val;
+      });
+
+      if (dict["meta.about.title"]) document.title = dict["meta.about.title"];
+      const metaDesc = document.getElementById("meta-description");
+      if (metaDesc && dict["meta.about.description"]) metaDesc.setAttribute("content", dict["meta.about.description"]);
+      const metaOgTitle = document.getElementById("meta-og-title");
+      if (metaOgTitle && dict["meta.about.ogTitle"]) metaOgTitle.setAttribute("content", dict["meta.about.ogTitle"]);
+      const metaOgDesc = document.getElementById("meta-og-description");
+      if (metaOgDesc && dict["meta.about.ogDescription"]) metaOgDesc.setAttribute("content", dict["meta.about.ogDescription"]);
+    }
+
+    async function setLanguage(lang) {
+      try {
+        const dict = await loadDict(lang);
+        applyTranslations(dict, lang);
+        localStorage.setItem("martlet_lang", lang);
+      } catch (err) {
+        if (lang !== "nl") {
+          const dict = await loadDict("nl");
+          applyTranslations(dict, "nl");
+          localStorage.setItem("martlet_lang", "nl");
+        }
+      }
+    }
+
+    document.getElementById("lang-nl").addEventListener("click", () => setLanguage("nl"));
+    document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
+
+    const saved = localStorage.getItem("martlet_lang");
+    setLanguage(saved === "en" ? "en" : "nl");
+  </script>
+</body>
+</html>

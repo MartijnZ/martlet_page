@@ -22,7 +22,7 @@ const shapes=[
 const galleries={
 1:[['madern-tmp-servicecyclus.png','Illustratie van de servicecyclus in TMP: van onderhoudsaanvraag en verzending tot voortgang en verwachte levering.']],
 3:[['robocrops_1.png','In de praktijk: aubergines beoordelen.'],['robocrops_2.png','In gesprek tussen het gewas.']],
-5:[['rdcmonitor_v1.jpeg','Eerste ontwerp — opstelling op de werkbank.'],['rdcmonitor_v1_1.jpeg','Eerste ontwerp — plaatsing bij de machine.'],['rdcmonitor_v1_2.jpeg','De monitor in gebruik.'],['rdcmonitor_v2.jpeg','Tweede ontwerp — behuizing en aansluitingen.'],['rdcmonitor_v2_fixglare.jpeg','Tweede ontwerp — voorzijde.'],['rdc_monitor.png','De bijbehorende software: RDC Analytics.']]
+5:[['rdcmonitor_v1.jpeg','Eerste ontwerp — opstelling op de werkbank.'],['rdcmonitor_v1_1.jpeg','Eerste ontwerp — plaatsing bij de machine.'],['rdcmonitor_v1_2.jpeg','De monitor in gebruik.'],['rdcmonitor_v2.jpeg','Tweede ontwerp — behuizing en aansluitingen.'],['rdcmonitor_v2_clean.png','Tweede ontwerp — voorzijde.'],['rdc_monitor.png','De bijbehorende software: RDC Analytics.']]
 };
 function gallery(i){return galleries[i]?`<div class="project-gallery"><h3>${i===5?'Ontwerpiteraties':'In de praktijk'}</h3>${galleries[i].map(([file,caption])=>`<figure><img src="voorbeelden/images/${file}" alt="${caption}" loading="lazy"><figcaption>${caption}</figcaption></figure>`).join('')}</div>`:'';}
 const app=document.querySelector('#app');

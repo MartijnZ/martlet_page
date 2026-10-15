@@ -1,0 +1,226 @@
+{
+  "intro": {
+    "label": "MARTIJN ZEESTRATEN · TECHNIEK & DIGITALISERING",
+    "tekst": "Ik help bedrijven hun processen te verbeteren met passende techniek en digitalisering.",
+    "toelichting": "Van het begrijpen van het vraagstuk tot het realiseren van de oplossing. Samen met de mensen die ermee werken.",
+    "knop": "Ontdek mijn werk",
+    "fotobijschrift": "In gesprek. In de praktijk.",
+    "onderregel": "TECHNIEK · PROCESSEN · MENSEN",
+    "scrolltekst": "Scroll om te ontdekken",
+    "titel": "Denken",
+    "titelAccent": "en Doen"
+  },
+  "werk": {
+    "label": "EEN SELECTIE UIT MIJN WERK",
+    "titel": "Verschillende vragen.",
+    "titelAccent": "Betrokken bij de oplossing.",
+    "tekst": "Van bedrijfssoftware tot automatisering in de tuinbouw. Deze projecten laten zien waar ik aan werk en wat ik bijdraag.",
+    "hint": "Klik op een project voor mijn bijdrage.",
+    "galerijTitel": "In de praktijk",
+    "ontwerpiteratiesTitel": "Ontwerpiteraties"
+  },
+  "over": {
+    "label": "ZO WERK IK",
+    "titel": "Grondig begrijpen.",
+    "titelAccent": "Praktisch verder.",
+    "tekst": "Een goede oplossing begint met begrijpen wat er speelt. Ik verbind technische diepgang met de dagelijkse praktijk van het bedrijf.",
+    "naam": "Martijn Zeestraten",
+    "achtergrond": "Mijn achtergrond ligt in onderzoek en acht jaar werken binnen een MKB-maakbedrijf. Met Martlet breng ik die ervaring mee in technische ontwikkeling, digitalisering en procesverbetering."
+  },
+  "werkwijze": {
+    "stap1Titel": "Het vraagstuk doorgronden",
+    "stap1Tekst": "Luisteren, kijken en onderzoeken. Wat loopt er vast, waardoor komt dat en welke verbetering is werkelijk nodig?",
+    "stap2Titel": "Een richting bepalen",
+    "stap2Tekst": "Mogelijkheden toetsen aan de techniek én de bedrijfsvoering. Samen kiezen welke stap zinvol en uitvoerbaar is.",
+    "stap3Titel": "Meewerken aan de oplossing",
+    "stap3Tekst": "Een gericht advies, een experiment of een werkend systeem. Mijn bijdrage sluit aan op wat het vraagstuk nodig heeft."
+  },
+  "contact": {
+    "label": "LATEN WE KENNISMAKEN",
+    "titel": "Wat houdt",
+    "titelAccent": "jou bezig?",
+    "tekst": "Een technisch vraagstuk, een proces dat beter kan of een idee dat je wilt onderzoeken. Ik denk graag met je mee.",
+    "email": "martijn@martlet.nu",
+    "copyright": "© Martlet · Martijn Zeestraten"
+  },
+  "navigatie": {
+    "werk": "Mijn werk",
+    "over": "Over Martijn",
+    "contact": "Contact",
+    "omhoog": "Terug naar boven",
+    "sluiten": "Sluit project"
+  },
+  "projecten": [
+    {
+      "naam": "Firma Buitelaar",
+      "categorie": "Digitalisering",
+      "samenvatting": "Meer grip op de administratie, met behoud van flexibiliteit.",
+      "alineas": [
+        "Firma Buitelaar had al meerdere ERP-pakketten bekeken. De conclusie was steeds dezelfde: dit past niet bij onze manier van werken. De voorgeschreven processen lieten te weinig ruimte voor de flexibiliteit die het bedrijf juist sterk maakt.",
+        "Tegelijkertijd kostte de bestaande werkwijze veel tijd. Papieren werkbonnen en losse systemen voor boekhouding, urenregistratie en factuurafhandeling vroegen om handmatig overnemen en uitzoekwerk. Het zicht op projectkosten was beperkt en de nacalculatie gebeurde met de hand. Was de werkbon compleet? Waren alle inkoopfacturen binnen?",
+        "Samen met Firma Buitelaar onderzocht ik hoe we de voordelen van digitalisering konden combineren met hun manier van werken. Dat is gelukt met een Odoo-inrichting die aansluit op de bedrijfsvoering: meer samenhang en overzicht in de administratie, met behoud van de flexibiliteit in het dagelijkse werk."
+      ],
+      "trefwoorden": [
+        "Bedrijfsprocessen",
+        "Odoo",
+        "Implementatie"
+      ],
+      "galerij": [],
+      "afbeelding": {
+        "bestand": "buitelaar.png",
+        "beschrijving": "Logo Firma Buitelaar",
+        "type": "logo"
+      }
+    },
+    {
+      "naam": "Madern",
+      "categorie": "Platformontwikkeling",
+      "samenvatting": "Inzicht in gereedschap, van productie tot onderhoud.",
+      "alineas": [
+        "Een rotatieve stans is een kostbaar stuk gereedschap. Om er zoveel mogelijk uit te halen, hebben Madern en haar klanten inzicht nodig in het gebruik, de inspecties en het onderhoud. Die informatie was verspreid over verschillende systemen, e-mail en Excel. Metingen werden handmatig overgeschreven en later gedigitaliseerd.",
+        "Dat zorgde aan beide kanten voor zoekwerk en veel e-mailverkeer. Wat is de status van de order? Waar staat het inspectierapport? En wat verklaart dat een toolset minder goed functioneert?",
+        "Het Tool Management Platform (TMP) brengt die informatie bij elkaar, met een duidelijke rol voor de bestaande systemen. Pro.File blijft de bron voor ontwerpgegevens en Infor voor ERP-informatie. TMP verbindt deze systemen met een portaal voor de werkvloer en de klant.",
+        "Medewerkers kunnen vanuit hun vertrouwde Axxalon-omgeving direct naar TMP om metingen, bevindingen en beeldmateriaal vast te leggen. Klanten krijgen rechtstreeks zicht op de status en de bevindingen van inspecties.",
+        "Ik ontwierp het concept, bracht de betrokken partijen op één lijn en vertaalde de bedrijfsprocessen naar een functioneel ontwerp. Samen met de developers werkte ik dat uit tot een werkend platform. Daarmee verloopt het werk bij Madern soepeler: de informatie is vindbaar en beschikbaar op het moment dat die nodig is."
+      ],
+      "trefwoorden": [
+        "Conceptontwerp",
+        "Procesvertaling",
+        "Integratie"
+      ],
+      "galerij": [
+        {
+          "bestand": "madern-tmp-servicecyclus.png",
+          "bijschrift": "Illustratie van de servicecyclus in TMP: van onderhoudsaanvraag en verzending tot voortgang en verwachte levering."
+        }
+      ],
+      "afbeelding": {
+        "bestand": "madern.png",
+        "beschrijving": "Logo Madern",
+        "type": "logo"
+      }
+    },
+    {
+      "naam": "AJB",
+      "categorie": "Procesanalyse",
+      "samenvatting": "De oorzaken achter planningsproblemen begrijpen.",
+      "alineas": [
+        "Analyse van de planningsproblematiek en advies voor verbetering. De bijdrage van Martlet is het vraagstuk doorgronden en inzicht vertalen naar praktische verbetermogelijkheden."
+      ],
+      "trefwoorden": [
+        "Analyse",
+        "Planning",
+        "Advies"
+      ],
+      "galerij": [],
+      "afbeelding": {
+        "bestand": "ajb.jpg",
+        "beschrijving": "Machines op de werkvloer bij AJB",
+        "type": "photo"
+      }
+    },
+    {
+      "naam": "Robocrops",
+      "categorie": "Tuinbouw",
+      "samenvatting": "Verbeteren begint bij de vraag uit de praktijk.",
+      "alineas": [
+        "Als technisch expert bij Robocrops help ik telers bij vraagstukken rond automatisering en procesverbetering. Ik neem ervaring van buiten de glastuinbouw mee: een PhD in Robotica en Machine Learning en jaren als R&D-manager in de industriële automatisering en maakindustrie. Mijn bijzondere interesse ligt bij Physical AI: hoe robots met data kunnen leren om handelingen in de praktijk uit te voeren.",
+        "Ik begin bij het werk in de kas. Wat loopt er vast? Welke aannames doen we, en hoe kunnen we die toetsen? Samen met de teler breng ik het vraagstuk terug tot concrete stappen en werk ik mee aan de technische uitvoering.",
+        "Daarbij kijk ik ook naar wat een oplossing vraagt en oplevert. Een indrukwekkende toepassing van AI of robotica is nog niet vanzelf rendabel voor een individuele teler. Betrouwbaarheid, schaal en de dagelijkse bedrijfsvoering bepalen of technologie werkelijk bruikbaar is.",
+        "Dat krijgt vorm in projecten rond feedback aan aubergine-oogsters over het oogstmoment, onderzoek naar oogstondersteuning in gerbera en de automatiseringsstrategie voor Vreugdenhil Bulbs & Plants.",
+        "Ik wil bijdragen aan een glastuinbouw die in Nederland kan blijven produceren en internationaal sterk blijft. De praktische instelling van telers past bij mij: samen begrijpen wat nodig is en vervolgens aan de slag."
+      ],
+      "trefwoorden": [
+        "Probleemvalidatie",
+        "Onderzoek",
+        "Automatiseringsstrategie"
+      ],
+      "galerij": [
+        {
+          "bestand": "robocrops_1.png",
+          "bijschrift": "In de praktijk: aubergines beoordelen."
+        },
+        {
+          "bestand": "robocrops_2.png",
+          "bijschrift": "In gesprek tussen het gewas."
+        }
+      ],
+      "afbeelding": {
+        "bestand": "robocrops_2.png",
+        "beschrijving": "Martijn tussen de aubergineplanten",
+        "type": "photo"
+      }
+    },
+    {
+      "naam": "Data voor Physical AI",
+      "categorie": "Technisch onderzoek",
+      "samenvatting": "Van praktijkdata naar lerende robots.",
+      "alineas": [
+        "Onderzoek naar het verzamelen en bruikbaar maken van praktijkdata voor Physical AI in de glastuinbouw. De centrale vraag is hoe menselijke handelingen kunnen bijdragen aan data waarmee robots leren. Dit werk is in ontwikkeling."
+      ],
+      "trefwoorden": [
+        "Praktijkdata",
+        "Robotica",
+        "Verkenning"
+      ],
+      "galerij": [],
+      "afbeelding": {
+        "bestand": "physical_ai_datacollection.png",
+        "beschrijving": "Dataverzameling tijdens het oogsten in de kas",
+        "type": "photo"
+      }
+    },
+    {
+      "naam": "RDC-monitor",
+      "categorie": "Monitoring & productontwikkeling",
+      "samenvatting": "Zicht op wat er tijdens het gebruik van gereedschap gebeurt.",
+      "alineas": [
+        "Rotatieve stansen zijn waardevolle gereedschappen. Toch gaan toolsets in de praktijk soms stuk zonder dat duidelijk is waarom. Achteraf blijft de vraag: wat is er gebeurd? Ligt de oorzaak bij het gereedschap of bij het gebruik? Ook tijdens het draaien heeft de gebruiker weinig directe feedback over hoe het met de toolset gaat.",
+        "Met de RDC-monitor werk ik aan inzicht in wat er tijdens gebruik gebeurt. De uitdaging begint bij de meting: welke signalen zeggen iets over de conditie van het gereedschap, en hoe meet en analyseer je trillingen op een bruikbare manier? Even belangrijk is de vertaling naar de werkvloer. Wat wil de gebruiker weten, en hoe maak je die informatie begrijpelijk?",
+        "Ik ontwikkelde een eerste werkend prototype: van hardware en meetsoftware tot de webtools waarmee de gegevens inzichtelijk worden. Ook de installatie op locatie en het testen in de praktijk horen daarbij.",
+        "De eerste pilot loopt en maakt zichtbaar wat voorheen buiten beeld bleef. Meerdere productielocaties zijn enthousiast over dit inzicht. De pilot helpt om de metingen en de terugkoppeling aan gebruikers verder te toetsen en te verbeteren."
+      ],
+      "trefwoorden": [
+        "Hardware",
+        "Software",
+        "Trillingsanalyse",
+        "Pilot"
+      ],
+      "galerij": [
+        {
+          "bestand": "rdcmonitor_v1.jpeg",
+          "bijschrift": "Eerste ontwerp — opstelling op de werkbank."
+        },
+        {
+          "bestand": "rdcmonitor_v1_1.jpeg",
+          "bijschrift": "Eerste ontwerp — plaatsing bij de machine."
+        },
+        {
+          "bestand": "rdcmonitor_v1_2.jpeg",
+          "bijschrift": "De monitor in gebruik."
+        },
+        {
+          "bestand": "rdcmonitor_v2.jpeg",
+          "bijschrift": "Tweede ontwerp — behuizing en aansluitingen."
+        },
+        {
+          "bestand": "rdcmonitor_v2_clean.png",
+          "bijschrift": "Tweede ontwerp — voorzijde."
+        },
+        {
+          "bestand": "rdc_monitor.png",
+          "bijschrift": "De bijbehorende software: RDC Analytics."
+        }
+      ],
+      "afbeelding": {
+        "bestand": "rdcmonitor_v1_2.jpeg",
+        "beschrijving": "RDC-monitor met informatie over de actieve toolset, snelheid en trillingen",
+        "type": "photo"
+      }
+    }
+  ],
+  "pagina": {
+    "titel": "Martlet | Denken en Doen",
+    "beschrijving": "Martijn Zeestraten helpt bedrijven hun processen te verbeteren met passende techniek en digitalisering. Van het begrijpen van het vraagstuk tot het realiseren van de oplossing."
+  }
+}

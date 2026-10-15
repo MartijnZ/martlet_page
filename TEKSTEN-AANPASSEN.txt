@@ -1,0 +1,37 @@
+TEKSTEN AANPASSEN
+
+Open content.json in de hoofdmap. De hoofdwebsite en alle voorbeelden lezen
+ditzelfde bestand. Bewerk de tekst rechts van de veldnaam.
+
+intro: de opening, titel en knop.
+werk: de introductie boven de projectkaarten.
+over: je achtergrond en introductie van je werkwijze.
+werkwijze: de drie stappen.
+contact: contacttekst, e-mailadres en onderregel.
+navigatie: de labels van links en knoppen.
+projecten: per project de naam, categorie, samenvatting, alinea's en trefwoorden.
+pagina: de paginatitel en beschrijving voor zoekmachines en gedeelde links.
+
+Elke tekst bij alineas is een aparte alinea. Je kunt alinea's toevoegen of
+verwijderen. Tussen twee alinea's staat een komma; na de laatste niet.
+Laat de dubbele aanhalingstekens rond teksten en de haakjes staan.
+Gebruik binnen een tekst bij voorkeur enkele aanhalingstekens. Een dubbel
+aanhalingsteken binnen een tekst schrijf je als \".
+Gebruik gewone tekst, geen HTML. Speciale tekens worden veilig weergegeven.
+
+Bij galerij kun je bijschriften aanpassen. Afbeeldingsbestanden staan in
+voorbeelden/images; in content.json staat alleen hun bestandsnaam.
+Laat de projectvolgorde voorlopig staan: enkele visuele stijlen en het
+Robocrops-logo zijn gekoppeld aan de positie van de kaart.
+
+Sla op en ververs http://127.0.0.1:8765/ of de voorbeeldpagina.
+Gebruik een lokale webserver; dubbelklikken op index.html werkt niet voor JSON.
+Als JSON ongeldig is, toont de website een melding. Controleer dan de komma's
+en aanhalingstekens. Een editor zoals VS Code kan JSON-fouten aanwijzen.
+
+Voor publicatie: commit en push. Na deze eenmalige omzetting hoef je voor
+gewone tekstwijzigingen alleen content.json te wijzigen en te pushen.
+De statische metadata en tekst voor bezoekers zonder JavaScript staan ook
+in index.html. Werk die bij als je de algemene siteomschrijving verandert.
+De alternatieve titels en keuzeteksten van ontwerp 2 t/m 4 blijven in de
+voorbeeldcode staan; de inhoud van de website zelf komt uit content.json.
